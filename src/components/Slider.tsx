@@ -32,6 +32,10 @@ function Slider() {
     oscillator.device.setOscSinFreq(gammaToPitch(event.gamma || 0));
   }
 
+  function requestPermission() {
+    (DeviceOrientationEvent as any).requestPermission();
+  }
+
   function handleMute() {
     setNoisePlaying(oscillator.toggle());
   }
