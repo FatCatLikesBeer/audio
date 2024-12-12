@@ -33,6 +33,8 @@ function Slider() {
   }
 
   function requestPermission() {
+    // This is stupid and bad
+    // But iOS is unique in their permissions and my LSP doesn't care for it.
     (DeviceOrientationEvent as any).requestPermission();
   }
 
