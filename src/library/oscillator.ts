@@ -20,10 +20,10 @@ export default class Osc {
     this.ampSinMute = false;
     this.mute = false;
 
-    this.init();
+    this.#init();
   }
 
-  init() {
+  #init() {
     // set square wave amp attributes
     this.ampSqu.connect(this.context.destination, this.context.currentTime);
     this.ampSqu.gain.setValueAtTime(volume, this.context.currentTime);
