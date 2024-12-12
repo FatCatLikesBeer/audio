@@ -1,4 +1,4 @@
-const volume = 0.2;
+const volume = 3.8;
 
 export default class Osc {
   context: AudioContext;
