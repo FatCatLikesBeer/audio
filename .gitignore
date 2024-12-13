@@ -25,3 +25,6 @@ dist-ssr
 
 # keys
 10.0.0.10+2*
+
+# audio files
+/public/tracks/*
