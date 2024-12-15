@@ -43,9 +43,11 @@ function Slider() {
 
   useEffect(() => {
     window.addEventListener("deviceorientation", handleOrientation);
+    window.addEventListener("blur", handleMute);
     return (() => {
       window.removeEventListener("deviceorientation", handleOrientation);
-    })
+      window.removeEventListener("blur", handleMute);
+    });
   }, []);
 
   return (
